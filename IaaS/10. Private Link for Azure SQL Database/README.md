@@ -19,17 +19,17 @@ Below are the step-by-step instructions and an explanation of each step.
 
 5. The deployment may take a few minutes to complete. After the deployment has succeeded, view your Azure SQL Database.
 
-6. Now, lets Connect to the VM from the internet as follows:
+6. Now, lets connect to the VM from the internet as follows:
 
    - Go to Virtual Machine which we created using the template.
 
-   - Select the Connect button. After selecting the Connect button, Connect to virtual machine opens. 
+   - Select the **Connect** button. After selecting the Connect button, Connect to virtual machine opens. 
    
    - Select Download RDP File. Azure creates a Remote Desktop Protocol (.rdp) file and downloads it to your computer.
 
    - Open the downloaded.rdp* file. If prompted, select Connect. Enter the username and password you specified when creating the VM.
    
-7. Now, lets Access SQL Database Server privately from the VM. We will connect to the SQL Database Server from the VM using the Private Endpoint using the below steps:
+7. Now, lets access SQL Database Server privately from the VM. We will connect to the SQL Database Server from the VM using the Private Endpoint using the below steps:
 
    - In the Remote Desktop of VM, open PowerShell.
 
