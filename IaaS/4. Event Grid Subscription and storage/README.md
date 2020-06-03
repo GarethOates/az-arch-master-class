@@ -41,20 +41,18 @@ Below are the step-by-step instructions and an explanation of each step.
 
    https://github.com/Azure/azure-quickstart-templates/tree/master/101-event-grid-subscription-and-storage 
    
-   Select **Deploy to Azure** available there to deploy the solution to your subscription. In the Azure portal, provide values for the parameters.
+   Select **Deploy to Azure** available there to deploy the solution to your subscription. 
+   
+2. In the Azure portal, provide values for the parameters. Specify the endpoint: provide the URL of your web app and add api/updates to the home page URL (`https://<your-site>/api/updates/`).
 
-2. The deployment may take a few minutes to complete. After the deployment has succeeded, view your web app to make sure it's running. In a web browser, navigate to: https://<your-site-name>.azurewebsites.net
+3. Select Purchase to deploy the template.
 
-3. You see the site but no events have been posted to it yet.
+4. The deployment may take a few minutes to complete. After the deployment has succeeded, view your web app to make sure it's running. In a web browser, navigate to: `https://<your-site-name>.azurewebsites.net`
 
-4. Now, let's trigger an event to see how Event Grid distributes the message to your endpoint.
+5. You see the site but no events have been posted to it yet.
 
-5. You trigger an event for the Blob storage by uploading a file. The file doesn't need any specific content. The articles assumes you have a file named testfile.txt, but you can use any file.
+6. Now, let's trigger an event to see how Event Grid distributes the message to your endpoint.
 
-6. When you upload the file to the Azure Blob storage, Event Grid sends a message to the endpoint you configured when subscribing. The message is in the JSON format and it contains an array with one or more events. In the following example, the JSON message contains an array with one event. View your web app and notice that a blob created event was received.
+7. You trigger an event for the Blob storage by uploading a file. The file doesn't need any specific content (you can use any file).
 
-
-
-
-
-
+8. When you upload the file to the Azure Blob storage, Event Grid sends a message to the endpoint you configured when subscribing. The message will in the JSON format and it contains an array with one or more events.
