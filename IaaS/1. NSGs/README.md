@@ -1,8 +1,6 @@
-# Multi tier VNet with NSGs and DMZ
+# Multi-tier VNet with NSGs and DMZ
 
-Please click on the link below to find the template. Click on Deploy to Azure button available there to deploy the template:
-https://github.com/Azure/azure-quickstart-templates/tree/master/201-nsg-dmz-in-vnet
-
+### Introduction
 This template creates a VNet with 3 subnets:
 
 * **Frontend** - _FESubnet / 10.0.0.0/24_
@@ -23,6 +21,23 @@ Each NSG is then associated with a subnet:
 
 It creates DMZ rules for the App subnet to expose endpoints to the Internet. It secures the App subnet and the Database subnet with appropriate rules. It blocks Outbound Internet access to VMs in the App and Database subnets. It opens up the Database Subnet only on port 1433 the App Subnet.
 
+### Instructions
 
+Below are the step-by-step instructions and an explanation of each step. 
 
+1. Please click on the link below to find the template:
+
+   https://github.com/Azure/azure-quickstart-templates/tree/master/201-nsg-dmz-in-vnet
+   
+   Select **Deploy to Azure** available there to deploy the solution to your subscription. 
+   
+2. In the Azure portal, provide values for the parameters.
+
+3. Select **Purchase** to deploy the template.
+
+4. The deployment may take a few minutes to complete. After the deployment has succeeded, view your Virtual Network.
+
+5. You see the 3 subnets are created and if you click on each subnet, a NSG is associated with the Subnet.
+
+6. Now, let's check the NSG flow with Network Watcher.
 
