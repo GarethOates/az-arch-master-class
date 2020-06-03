@@ -1,4 +1,4 @@
-# Create a VM with multiple NICs and RDP accessible
+# Create a VM with multiple NICs
 
 ### Introduction
 This template allows you to create a Virtual Machines with multiple (2) network interfaces (NICs), and RDP connectable with a configured load balancer and an inbound NAT rule. This template also deploys a Storage Account, Virtual Network, Public IP address, and 2 Network Interfaces (front-end and back-end).
@@ -20,6 +20,3 @@ Below are the step-by-step instructions and an explanation of each step.
 4. The deployment may take a few minutes to complete. After the deployment has succeeded, view your Virtual Machine.
 
 5. You see the 2 NICs attached to the VM.
-
-
-
