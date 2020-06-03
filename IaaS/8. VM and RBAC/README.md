@@ -8,12 +8,8 @@ This template assigns Owner, Reader, Contributor, Virtual Machine Contributor ac
 
 Use following powershell command to get Principal ID associated with a user using their email id. Please note, principal id maps to the id inside the directory and can point to a user, service principal, or security group. The ObjectId is the principal ID.
 
-PS C:\> Get-AzureADUser -Filter "userPrincipalName eq '<email id>'"
-  
-ObjectId                             DisplayName   UserPrincipalName          UserType
---------                             -----------   -----------------          --------
-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx <name>        <email id>                         
-
+`Get-AzureADUser -Filter "userPrincipalName eq '<email id>'"`
+                   
 Please refer this [documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles) for more details on Built-in Roles.
 
 ### Instructions
@@ -35,3 +31,5 @@ Below are the step-by-step instructions and an explanation of each step.
 6. Go to **Access control (IAM)** -> **Role assignments**. Search for the email id to which you assigned the role.
 
 7. You will see that **User** is assigned that role and has permissions available for that role.
+
+    For example: If you provided "Virtual Contributor Role", You will be able to manage virtual machine, but not access to them, and not the virtual network or storage account they're connected to.
