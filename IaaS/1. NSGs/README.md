@@ -25,19 +25,19 @@ It creates DMZ rules for the App subnet to expose endpoints to the Internet. It 
 
 Below are the step-by-step instructions and an explanation of each step. 
 
-1. Please click on the link below to find the template:
+1. Click on the link below to find the template:
 
    https://github.com/Azure/azure-quickstart-templates/tree/master/201-nsg-dmz-in-vnet
    
-   Select **Deploy to Azure** available there to deploy the solution to your subscription. 
+2. Click **Deploy to Azure** button available there to deploy the solution to your subscription. 
    
-2. In the Azure portal, provide values for the parameters.
+3. In the Azure portal, provide values for the parameters.
 
-3. Select **Purchase** to deploy the template.
+4. Select **Purchase** to deploy the template.
 
-4. The deployment may take a few minutes to complete. After the deployment has succeeded, view your Virtual Network.
+5. The deployment may take a few minutes to complete. After the deployment has succeeded, view your Virtual Network.
 
-5. You see the 3 subnets are created and if you click on each subnet, a NSG is associated with the Subnet.
+6. You see the 3 subnets are created and if you click on each subnet, a NSG is associated with the Subnet.
 
-6. Now, let's check the NSG flow with Network Watcher.
+7. Now, let's check the NSG flow with Network Watcher.
 
