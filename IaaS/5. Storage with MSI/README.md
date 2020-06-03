@@ -11,21 +11,21 @@ You need a existing storage account in different resource group. If you have one
 
 Below are the step-by-step instructions and an explanation of each step. 
 
-1. Please click on the link below to find the template:
+1. Click on the link below to find the template:
 
    https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-msi-storage
    
-   Select **Deploy to Azure** available there to deploy the solution to your subscription. 
+2. Click **Deploy to Azure** available there to deploy the solution to your subscription. 
    
-2. In the Azure portal, provide values for the parameters.
+3. In the Azure portal, provide values for the parameters.
 
-3. Select **Purchase** to deploy the template.
+4. Select **Purchase** to deploy the template.
 
-4. The deployment may take a few minutes to complete. After the deployment has succeeded, view the Virtual Machine.
+5. The deployment may take a few minutes to complete. After the deployment has succeeded, view the Virtual Machine.
 
-5. Click on **Identity**. You will see the System-Assigned Identity is selected. Click on the **Persmissions: Azure Role Assignment** button to view the Azure RBAC roles assigned to this managed identity and the permissions to this role.
+6. Click on **Identity**. You will see the System-Assigned Identity is selected. Click on the **Persmissions: Azure Role Assignment** button to view the Azure RBAC roles assigned to this managed identity and the permissions to this role.
 
-6. Follow the below steps to test the Managed Identity to access the Azure Storage. We will Get an access token and use it to call Azure Storage using these steps:
+7. Follow the below steps to test the Managed Identity to access the Azure Storage. We will Get an access token and use it to call Azure Storage using these steps:
 
    - In the Azure portal, navigate to Storage account which we created in other resource group, go to containers, create a "test" container and upload a file "test.txt" with the content of your choice to the container.
 
