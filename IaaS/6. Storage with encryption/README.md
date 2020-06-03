@@ -1,4 +1,4 @@
-# Create a Storage Account with Storage Service Encryption for Data at Rest
+# Azure Storage encryption for data at rest
 
 ### Introduction
 This template creates a Storage account with Storage Service Encryption for Data at Rest. For more information, see here:
