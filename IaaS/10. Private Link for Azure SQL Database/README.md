@@ -21,7 +21,7 @@ Below are the step-by-step instructions and an explanation of each step.
 
 6. Now, lets Connect to the VM from the internet as follows:
 
-   - In the portal's search bar, enter myVm{uniqueid}.
+   - Go to Virtual Machine which we created using the template.
 
    - Select the Connect button. After selecting the Connect button, Connect to virtual machine opens. 
    
@@ -33,7 +33,7 @@ Below are the step-by-step instructions and an explanation of each step.
 
    - In the Remote Desktop of VM, open PowerShell.
 
-   - Enter nslookup sqlserver{uniqueid}.database.windows.net. You'll receive a message that shows that it is connected using the Private Endpoint.
+   - Enter `nslookup <sqlserver name>.database.windows.net` command. You'll receive a message that shows that it is connected using the Private Endpoint.
   
 
    
