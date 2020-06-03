@@ -24,4 +24,4 @@ Below are the step-by-step instructions and an explanation of each step.
 
 6. Go to **Settings** -> **Backend pools** to check the Backend pools configuration.
 
-7. Go to **Settings** -> **Load Balancing Rules** to check the Load Balanacer rule created.
+7. Go to **Settings** -> **Load Balancing Rules** to check the Load Balancer rule created.
