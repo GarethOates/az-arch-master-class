@@ -9,7 +9,7 @@ Below are the step-by-step instructions and an explanation of each step.
 
 1. Click on the link below to find the template:
 
-   https://github.com/Azure/azure-quickstart-templates/tree/master/201-nsg-dmz-in-vnet
+   https://github.com/Azure/azure-quickstart-templates/blob/master/201-vnet-2subnets-service-endpoints-storage-integration
    
 2. Click **Deploy to Azure** available there to deploy the solution to your subscription. 
    
