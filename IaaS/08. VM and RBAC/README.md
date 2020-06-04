@@ -15,12 +15,11 @@ Please refer this [documentation](https://docs.microsoft.com/en-us/azure/role-ba
 ### Instructions
 
 Below are the step-by-step instructions and an explanation of each step. 
-
-1. Click on the link below to find the template:
-
-   https://github.com/Azure/azure-quickstart-templates/tree/master/101-rbac-builtinrole-virtualmachine
    
-2. Click **Deploy to Azure** available there to deploy the solution to your subscription. 
+1. Click **Deploy to Azure** button to deploy the solution to your subscription. 
+
+	[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fvlele/az-arch-master-class/master/IaaS/08.%20VM%20and%20RBAC/%2Fazuredeploy.json)  [![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-rbac-builtinrole-virtualmachine%2Fazuredeploy.json)
+
    
 3. In the Azure portal, provide values for the parameters.Inputs to this template are following fields: Principal ID, Virtual Machine Name, Built-in Role Type, GUID.
 
