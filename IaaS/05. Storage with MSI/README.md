@@ -25,6 +25,16 @@ Below are the step-by-step instructions and an explanation of each step.
 
 6. Click on **Identity**. You will see the System-Assigned Identity is selected. Click on the **Persmissions: Azure Role Assignment** button to view the Azure RBAC roles assigned to this managed identity and the permissions to this role.
 
+7. Another way to check the System-Assigned Identity that got created is through the **Azure AD**. Follow these steps to view thw MSI:
+   
+   - In the Azure portal, Search for **Azure Active Directory**.
+   
+   - Click on **Azure Active Directory**. Go to **Enterprise applications**.
+   
+   - Change **Application Type** to **All Applications**.
+   
+   - Search for the name of MSI that got created and View the MSI role and permissions.
+
 7. Follow the below steps to test the Managed Identity to access the Azure Storage. We will Get an access token and use it to call Azure Storage using these steps:
 
    - In the Azure portal, navigate to Storage account which we created in other resource group, go to containers, create a "test" container and upload a file "test.txt" with the content of your choice to the container.
