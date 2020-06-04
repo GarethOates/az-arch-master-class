@@ -39,7 +39,15 @@ Below are the step-by-step instructions and an explanation of each step.
    
    - Install SQL Server Management Studio
 
-   - In Connect to server, enter or select this information: Server type: Select Database Engine. Server name: `<server name>.database.windows.net` Username: Enter a username provided during creation. Password: Enter a password provided during creation. Remember password: Select Yes.
+   - In Connect to server, enter or select this information: 
+      
+      **Server type**: Select Database Engine.
+      
+      **Server name**: `<server name>.database.windows.net` 
+      
+      **Username**: Enter a username provided during creation. 
+      
+      **Password**: Enter a password provided during creation. Remember password: Select Yes.
 
    - Select Connect.
 
