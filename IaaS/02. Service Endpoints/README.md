@@ -20,3 +20,5 @@ Below are the step-by-step instructions and an explanation of each step.
 5. The deployment may take a few minutes to complete. After the deployment has succeeded, view your Virtual Network.
 
 6. You see the 2 subnets are created and if you click on a subnet, a Service Endpoint is enabled for Storage Account.
+
+7. Now lets test the storage account access. Go to the storage account we created using this template. Try to list the containers. But its shows the error as the service endpoint is enabled for the storage account.
