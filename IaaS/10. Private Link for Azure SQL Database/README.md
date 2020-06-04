@@ -3,6 +3,8 @@
 ### Introduction
 This template allows you to create private endpoint to Azure SQL Database.
 
+Please refer this [documentation](https://docs.microsoft.com/en-us/azure/private-link/create-private-endpoint-template) for more details.
+
 ### Instructions
 
 Below are the step-by-step instructions and an explanation of each step. 
@@ -34,8 +36,13 @@ Below are the step-by-step instructions and an explanation of each step.
    - In the Remote Desktop of VM, open PowerShell.
 
    - Enter `nslookup <sqlserver name>.database.windows.net` command. You'll receive a message that shows that it is connected using the Private Endpoint.
-  
-
    
+   - Install SQL Server Management Studio
 
+   - In Connect to server, enter or select this information: Server type: Select Database Engine. Server name: `<server name>.database.windows.net` Username: Enter a username provided during creation. Password: Enter a password provided during creation. Remember password: Select Yes.
 
+   - Select Connect.
+
+   - Browse Databases from left menu.
+
+   - (Optionally) Create or query information from sample-db
