@@ -53,9 +53,9 @@ Below are the step-by-step instructions and an explanation of each step.
          --vnet-name First_ARM_VNet 
          --subnet AppSubnet`
    
-  - Using this command we are creating a VM in the VNet which we created using the tempplate and let provide the Subnet name as `AppSubnet`
+  - Using this command we are creating a VM in the VNet which we created using the template and lets provide the Subnet name as `AppSubnet`. (You can provide other subnets of you choice)
   
-  - As the **AppSubnet** is connected to App_NSG, If you check the NSG Rules for App_NSG i.e. Block_RDP_Internet: It denys the Internet over Port 3389.
+  - As the **AppSubnet** is connected to **App_NSG**, If you check the NSG Rules for App_NSG i.e. **Block_RDP_Internet**: It denys the Internet over Port 3389.
   
   - When you go to VM, **Overview** -> **Connect** -> **RDP**. 
    
