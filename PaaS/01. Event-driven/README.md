@@ -1,4 +1,4 @@
-# Event-driven
+# Azure Event Grid (Partner Topic)
 
 ### Introduction
 
