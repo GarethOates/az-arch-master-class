@@ -41,7 +41,7 @@ Below are the step-by-step instructions and an explanation of each step.
 
 7. Now, let's check the connection with help of Virtual Machine. Follow the below steps:
 
-   - Create a Virtual Machine using the Azure CLI command:
+  - Create a Virtual Machine using the Azure CLI command:
    
       `az vm create --resource-group <rgname> 
          --name myVM 
