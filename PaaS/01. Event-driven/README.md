@@ -7,11 +7,11 @@
 
 Below are the step-by-step instructions and an explanation of each step.
 
-1. Create Event grid partner topic
+1. Create Event grid partner topic. Follow the below steps:
 
 	- In the Azure portal, search for **Event Grid Partner Topic**. Click on it.
 	
-	- Click on Create button presnt there for Auth0 Partner topic.
+	- Click on Create button present there for Auth0 Partner topic.
 	
 	- Provide the values for **Subscription ID** and **Resource Group Name**.
 	
@@ -26,11 +26,11 @@ Below are the step-by-step instructions and an explanation of each step.
 	- In the Azure portal, Check for the Partner topic that you created.
 
 
-2. Create Azure Function App from the GitHub Code
+2. Create Azure Function App from the GitHub Code. Follow the below steps:
 
 	- Clone the [repository] (https://github.com/jeffhollan/build-2020-eventdriven). Open the code in Visual Studio.
 	
-	- In the project, Go to **connected Devices** -> **Publish** -> **Start**.
+	- In the project, Go to **Connected Devices** -> **Publish** -> **Start**.
 	
 	- Choose **Azure** -> **Azure Function App**.
 	
@@ -42,7 +42,7 @@ Below are the step-by-step instructions and an explanation of each step.
 	
 	- In the Azure portal, View the Azure Function App which you created.
 
-3. Create a Logic App
+3. Create a Logic App. Follow the below steps:
 	
 	- In the Azure portal, search for **Logic App**. Click on it.
 	
