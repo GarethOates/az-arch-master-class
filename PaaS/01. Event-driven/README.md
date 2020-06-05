@@ -52,4 +52,5 @@ Activating the Auth0 topic in Azure allows events to flow from Auth0 to Azure.
 - Select your desired Azure service or WebHook for the Endpoint type.
 - Follow the instructions for the particular service.
 - Back on the Create Event Subscription page, select Create.
+- Refer this [section] (https://docs.microsoft.com/en-us/azure/event-grid/custom-event-quickstart) to know more on creating WebHook for the endpoint. 
 
