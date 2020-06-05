@@ -39,5 +39,26 @@ Below are the step-by-step instructions and an explanation of each step.
 
 6. You see the 3 subnets are created and if you click on each subnet, a NSG is associated with the Subnet.
 
-7. Now, let's check the NSG flow with Network Watcher.
+7. Now, let's check the connection with help of Virtual Machine. Follow the below steps:
 
+   - Create a Virtual Machine using the Azure CLI command:
+   
+      `az vm create --resource-group <rgname> 
+         --name myVM 
+         --image UbuntuLTS 
+         --admin-username azureuser 
+         --generate-ssh-keys 
+         --priority Spot 
+         --max-price -1 
+         --vnet-name First_ARM_VNet 
+         --subnet AppSubnet`
+   
+  - Using this command we are creating a VM in the VNet which we created using the tempplate and let provide the Subnet name as `AppSubnet`
+  
+  - As the **AppSubnet** is connected to App_NSG, If you check the NSG Rules for App_NSG i.e. Block_RDP_Internet: It denys the Internet over Port 3389.
+  
+  - When you go to VM, **Overview** -> **Connect** -> **RDP**. 
+   
+  - Download the RDP file. Try to connect to VM. 
+  
+  - You will see a error "Remote computer is not available on the network".
