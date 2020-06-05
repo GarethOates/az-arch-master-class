@@ -55,7 +55,7 @@ Below are the step-by-step instructions and an explanation of each step.
    
   - Using this command we are creating a VM in the VNet which we created using the template and lets provide the Subnet name as `AppSubnet`. (You can provide other subnets of you choice)
   
-  - As the **AppSubnet** is connected to **App_NSG**, If you check the NSG Rules for App_NSG i.e. **Block_RDP_Internet**: It denys the Internet over Port 3389.
+  - As the **AppSubnet** is connected to **App_NSG**, If you check the NSG Rules for App_NSG i.e. **Block_RDP_Internet**: It denys the Internet over Port 3389. Network connectivity blocked by security group rule: UserRule_Block_RDP_Internet, DefaultRule_DenyAllInBound.
   
   - When you go to VM, **Overview** -> **Connect** -> **RDP**. 
    
@@ -63,4 +63,4 @@ Below are the step-by-step instructions and an explanation of each step.
   
   - You will see a error "Remote computer is not available on the network".
   
-  - We can also test it using **Overview** -> **Connect** -> **SSH** and Go to **Test Connection**. You will recieve the message "Network connectivity blocked by security group rule: DefaultRule_DenyAllInBound".
+  - We can also test it using **Overview** -> **Connect** -> **SSH/RDP** and Go to **Test Connection**. You will recieve the message "Network connectivity blocked by security group rule: DefaultRule_DenyAllInBound".
