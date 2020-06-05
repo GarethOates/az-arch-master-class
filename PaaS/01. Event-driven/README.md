@@ -7,60 +7,44 @@
 
 Below are the step-by-step instructions and an explanation of each step.
 
-1. Create Event grid partner topic. Follow the below steps:
+#### Enable Event Grid resource provider
+Before you can create the log stream, you will need to register the Event Grid resource provider. If you've used Event Grid before, skip to the next section.
 
-	- In the Azure portal, search for **Event Grid Partner Topic**. Click on it.
-	
-	- Click on Create button present there for Auth0 Partner topic.
-	
-	- Provide the values for **Subscription ID** and **Resource Group Name**.
-	
-	- Click on **To Auth0 website**.
-	
-	- Login to the website using GitHub or other account you wish. Then Go to **Open Dashboard**
-	
-	- Click on the **Monitoring** -> **Streams**
-	
-	- Click on **Create Stream**. Provide the inputs for Event Grid.
-	
-	- In the Azure portal, Check for the Partner topic that you created.
+To do so, go to your Azure portal:
 
+1. Select Subscriptions
+2. Select the subscription you're using for Event Grid
+3. On the left menu, under Settings, select Resource providers
+4. Find Microsoft.EventGrid
+5. Select Register
+6. Refresh and make sure that the status changes to Registered
+Once the Event Grid resource provider is registered, please create the Log Stream and continue to the next section.
 
-2. Create Azure Function App from the GitHub Code. Follow the below steps:
+#### Create Event grid partner topic. 
+Follow the below steps:
+1. In the Azure portal, search for **Event Grid Partner Topic**. Click on it.
+2. Click on Create button present there for Auth0 Partner topic.
+3.Provide the values for **Subscription ID** and **Resource Group Name**.
+4.Click on **To Auth0 website**.
+5. Login to the website using GitHub or other account you wish. Then Go to **Open Dashboard**
+6. Click on the **Monitoring** -> **Streams**
+7. Click on **Create Stream**. Provide the inputs for Event Grid.
+8. In the Azure portal, Check for the Partner topic that you created.
 
-	- Clone the [repository] (https://github.com/jeffhollan/build-2020-eventdriven). Open the code in Visual Studio.
-	
-	- In the project, Go to **Connected Devices** -> **Publish** -> **Start**.
-	
-	- Choose **Azure** -> **Azure Function App**.
-	
-	- Create a new Function App.
-	
-	- Provide inputs for creating the Azure Function App. 
-	
-	- Publish the Function App.
-	
-	- In the Azure portal, View the Azure Function App which you created.
+#### Activate your Auth0 Partner Topic in Azure
+Activating the Auth0 topic in Azure allows events to flow from Auth0 to Azure.
 
-3. Create a Logic App. Follow the below steps:
-	
-	- In the Azure portal, search for **Logic App**. Click on it.
-	
-	- Click on **Add**. Provide inputs and create a Logic App.
-	
-	- After Logic App gets created. Go to **Logic App Designer**.
-	
-	- Create a event trigger. Provide the following values:
-	
-		- Resource Type - `Microsoft.EventGrid/partnerTopics`
-		
-		- Partner Topic Name - `<Name of Partner Topic created in Step -1>`
+1. Log in to the Azure Portal
+2. Search 'Partner Topics' at the top and click 'Event Grid Partner Topics' under services.
+3. Click on the topic that matches the stream you created in your Auth0 Dashboard.
+4. Confirm the 'Source' field matches your Auth0 account.
+5. Click Activate.
 
-	- Create a action. Go to all -> Azure Functions
-	
-	- Select the App function which got created in Step-2
-	
-	- Choose Process_Event function from the function app
-	
-	- Add dynamic content "body" to the body.
+#### Subscribe to Your Auth0 Partner Topic
+1. On the Event Grid topic page, select '+ Event Subscription' on the toolbar
+2. On the Create Event Subscription page:
+- Enter a name for event subscription
+- Select your desired Azure service or WebHook for the Endpoint type.
+- Follow the instructions for the particular service.
+- Back on the Create Event Subscription page, select Create.
 
