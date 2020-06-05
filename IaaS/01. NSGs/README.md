@@ -62,3 +62,5 @@ Below are the step-by-step instructions and an explanation of each step.
   - Download the RDP file. Try to connect to VM. 
   
   - You will see a error "Remote computer is not available on the network".
+  
+  - We can also test it using **Overview** -> **Connect** -> **SSH** and Go to **Test Connection**. You will recieve the message "Network connectivity blocked by security group rule: DefaultRule_DenyAllInBound".
