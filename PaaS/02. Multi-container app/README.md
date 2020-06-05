@@ -26,18 +26,18 @@ Below are the step-by-step instructions and an explanation of each step.
 
 	`cd multicontainerwordpress`
 
-4. Create a Resource Group using the following command:
+4. Create a Resource Group, using the following command:
 	
 	`az group create --name <resource_group_name> --location "South Central US"`
 
-5. Create an Azure App Service plan using the following command:
+5. Create an Azure App Service plan, using the following command:
 
 	`az appservice plan create --name <app_service_plan> --resource-group <resource_group_name> --sku S1 --is-linux`
 
-6. Create a Docker Compose app:
+6. Create a Docker Compose app, using the following command:
 
 	`az webapp create --resource-group myResourceGroup --plan <app_service_plan> --name <app_name> --multicontainer-config-type compose --multicontainer-config-file compose-wordpress.yml`
 
-7. Browse to the deployed app at (http://<app_name>.azurewebsites.net). The app may take a few minutes to load. If you receive an error, allow a few more minutes then refresh the browser.
+7. Browse to the deployed app at `http://<app_name>.azurewebsites.net`. The app may take a few minutes to load. If you receive an error, allow a few more minutes then refresh the browser.
 
 Note: You can also use the Azure CLI to execute these commands.
