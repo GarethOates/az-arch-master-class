@@ -6,7 +6,7 @@ By using partner topics, you can connect third-party event sources directly to A
 
 The first partner available through Event Grid partner topics is Auth0. You can use the Auth0 partner topic to connect your Auth0 and Azure accounts. The integration allows you to react to, log, and monitor Auth0 events in real time.
 
-Please refer [documentation] (https://docs.microsoft.com/en-us/azure/event-grid/partner-topics-overview) for details.
+Please refer [documentation](https://docs.microsoft.com/en-us/azure/event-grid/partner-topics-overview) for details.
 
 ### Instructions
 
@@ -52,5 +52,5 @@ Activating the Auth0 topic in Azure allows events to flow from Auth0 to Azure.
 - Select your desired Azure service or WebHook for the Endpoint type.
 - Follow the instructions for the particular service.
 - Back on the Create Event Subscription page, select Create.
-- Refer this [section] (https://docs.microsoft.com/en-us/azure/event-grid/custom-event-quickstart) to know more on creating WebHook for the endpoint. 
+- Refer this [section](https://docs.microsoft.com/en-us/azure/event-grid/custom-event-quickstart) to know more on creating WebHook for the endpoint. 
 
