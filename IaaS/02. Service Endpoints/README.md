@@ -19,6 +19,26 @@ Below are the step-by-step instructions and an explanation of each step.
 
 5. The deployment may take a few minutes to complete. After the deployment has succeeded, view your Virtual Network.
 
-6. You see the 2 subnets are created and if you click on a subnet, a Service Endpoint is enabled for Storage Account.
+6. You see the 2 subnets are created, follow the below steps to check service endpoint:
 
-7. Now lets test the storage account access. Go to the storage account we created using this template. Try to list the containers. But its shows the error as the service endpoint is enabled for the storage account.
+   - Go to **Virtual Network** -> **Subnets**.
+   
+   - You will be able to see 2 Subnets. Go to **subnet1**.
+   
+   - Check under the **Service Endpoints**. **Microsoft.Storage** is selected under the services.
+   
+7. Lets check under the storage account. Follow the below steps:
+
+   - Go to **Storage account**, we created using this template.
+   
+   - Go to **Settings** -> **Firewalls and virtual networks**. 
+   
+   - Under **Selected networks**, you can see the Virtual network we created through the template.
+
+8. Now, lets test the storage account access. Go to the storage account we created using this template. 
+
+   - Create a "test" container.
+   
+   - Click on the container to upload a file.
+   
+   - You will see a error saying "This request is not authorized to perform this operation".
