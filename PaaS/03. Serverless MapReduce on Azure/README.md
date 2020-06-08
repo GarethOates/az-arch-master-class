@@ -60,6 +60,6 @@ Follow the steps to deploy this solution to your own Azure subscription:
 3. Click **Test**. It open a side window to test the connection.
 4. Select the HTTP Method as **POST**.
 5. Select the key provided in the dropdown.
-6. In Query parameters, pass the Name as Path and value of the path. Value pf path will be path of `<path where code is downloaded>\ServerlessMapReduce.v1` on your local computer.
+6. In Query parameters, pass the Name as Path and value of the path. Value will be path of v1 app folder on local computer i.e. `<path where code is downloaded>\ServerlessMapReduce.v1` .
 7. You'll receive back a list of URLs you can use to check status, issue new events (not handled by this sample), or terminate the orchestration.
 
