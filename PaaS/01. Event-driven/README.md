@@ -57,10 +57,10 @@ Activating the Auth0 topic in Azure allows events to flow from Auth0 to Azure.
 1. Before subscribing to the partner topic, let's create the endpoint for the event message. 
 2. Use the below Azure CLI command to deploy the webapp.
 
-  `az group deployment create \
-    --resource-group gridResourceGroup \
-    --template-uri "https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/master/azuredeploy.json" \
-    --parameters siteName=<site_name> hostingPlanName=viewerhost`
+    `az group deployment create \
+      --resource-group gridResourceGroup \
+      --template-uri "https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/master/azuredeploy.json" \
+      --parameters siteName=<site_name> hostingPlanName=viewerhost`
   
 3. Replace `<site-name>` with a unique name for your web app. The web app name must be unique because it's part of the DNS entry.
 4. The deployment may take a few minutes to complete. 
