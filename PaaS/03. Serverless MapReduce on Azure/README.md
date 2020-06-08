@@ -39,13 +39,11 @@ Below are the step-by-step instructions and an explanation of each step.
 
 Follow the steps to deploy this solution to your own Azure subscription:
 
-**Important**: Run `deploy.ps1` in a new PowerShell window only after you've executed `SetupEnvironment.ps1`. This refreshes environment variables so the build & deploy commands will execute successfully
-
 1. Execute `deploy.ps1` with the following inputs:
 	- Subscription ID
 	- Base name for resources
 	
-> Note: By default all resources will be provisioned in the West US 2 region of Azure. If you wish to have them somewhere else, provide the -region parameter to the deployment script
+	> Note: By default all resources will be provisioned in the West US 2 region of Azure. If you wish to have them somewhere else, provide the -region parameter to the deployment script
    
 2. Following resources will be provisioned for you
 	- New Resource group
@@ -54,7 +52,7 @@ Follow the steps to deploy this solution to your own Azure subscription:
 	- 1 Consumption App Service Plan
 	- 2 Function Apps
 
-3. Open `ServerlessMapReduce.sln` in Visual Studio.
+3. Open `ServerlessMapReduce.sln` in Visual Studio. Build the solution.
 4. You'll first notice there are two projects in the solution. One is a Function v2 (.Net Standard) project, the other is a Function v1 (.Net 4.x aka "netfx") project. The code for each project is identical, and shared between the two via linked files.
 3. Right-click on first project and choose 'Publish...'. Publish it to v1 app service created by the PowerShell Script.
 4. Right-click on second project and choose 'Publish...'. Publish it to v2 app service created by the PowerShell Script.
