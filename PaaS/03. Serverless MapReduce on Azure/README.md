@@ -50,15 +50,15 @@ Follow the steps to deploy this solution to your own Azure subscription:
 	- 2 Function Apps
 3. Open `ServerlessMapReduce.sln` in Visual Studio. Build the solution.
 4. You'll first notice there are two projects in the solution. One is a Function v2 (.Net Standard) project, the other is a Function v1 (.Net 4.x aka "netfx") project. The code for each project is identical, and shared between the two via linked files.
-3. Right-click on first project and choose 'Publish...'. Publish it to v1 app service created by the PowerShell Script.
-4. Right-click on second project and choose 'Publish...'. Publish it to v2 app service created by the PowerShell Script.
+3. Right-click on first project and choose 'Publish' -> 'Azure'. Select the v1 app service that got created using the PowerShell script. Publish it to v1 app service.
+4. Right-click on second project and choose 'Publish' -> 'Azure'. Select the v2 app service that got created using the PowerShell script. Publish it to v2 app service.
 5. After the code is published to the app service. Lets test the app service.
 
 #### Testing the Function App
-1. Visit your Function App v1 in the Azure Portal.
-2. Click the StartAsync function.
-3. Click 'Test'. It open a side window to test the connection.
-4. Select the HTTP Method as "POST".
+1. Visit your **Function App v1** in the Azure portal.
+2. Click the **StartAsync** function.
+3. Click **Test**. It open a side window to test the connection.
+4. Select the HTTP Method as **POST**.
 5. Select the key provided in the dropdown.
 6. In Query parameters, pass the Name as Path and value of the path. Value pf path will be path of `<path where code is downloaded>\ServerlessMapReduce.v1` on your local computer.
 7. You'll receive back a list of URLs you can use to check status, issue new events (not handled by this sample), or terminate the orchestration.
