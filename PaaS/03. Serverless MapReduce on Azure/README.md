@@ -24,10 +24,10 @@ Note: If you've never run PowerShell scripts on your computer, you'll need to ch
 
 This performs the following permanent changes to your machine:
 
-Installs Chocolatey (for package installation automation)
-Installs Azure PowerShell
-Installs .Net Core SDK (to build v2 app)
-Installs .Net 4.6.1 Developer pack (to build v1 app)
+- Installs Chocolatey (for package installation automation)
+- Installs Azure PowerShell
+- Installs .Net Core SDK (to build v2 app)
+- Installs .Net 4.6.1 Developer pack (to build v1 app)
 
 ### Instructions
 
@@ -48,9 +48,9 @@ Below are the step-by-step instructions and an explanation of each step.
 
 There are two ways to choose from to deploy this solution to your own Azure subscription:
 
-##### **Visual Studio**
+#### **1. Visual Studio**
 Follow the below steps to deploy the code using the Visual Studio:
-1. Open ServerlessMapReduce.sln in Visual Studio.
+1. Open `ServerlessMapReduce.sln` in Visual Studio.
 2. You'll first notice there are two projects in the solution. One is a Function v2 (.Net Standard) project, the other is a Function v1 (.Net 4.x aka "netfx") project. The code for each project is identical, and shared between the two via linked files.
 3. Right-click either/both of the project(s) and choose 'Publish...'
 4. Walk through the wizard to create: 
@@ -58,15 +58,17 @@ Follow the below steps to deploy the code using the Visual Studio:
 	- Storage account
 	- Function app instance
 
-##### **Powershell**
+#### **2. Powershell**
 Follow the below steps to deploy the code using the PowerShell:
 
-> **Important**: Run deploy.ps1 in a new PowerShell window only after you've executed SetupEnvironment.ps1. This refreshes environment variables so the build & deploy commands will execute successfully
+**Important**: Run `deploy.ps1` in a new PowerShell window only after you've executed `SetupEnvironment.ps1`. This refreshes environment variables so the build & deploy commands will execute successfully
 
-1. Execute deploy.ps1 with the following inputs:
+1. Execute `deploy.ps1` with the following inputs:
 	- Subscription ID
 	- Base name for resources
+	
    > Note: By default all resources will be provisioned in the West US 2 region of Azure. If you wish to have them somewhere else, provide the -region parameter to the deployment script
+   
 2.Following resources will be provisioned for you
 	- New Resource group
 	- 2 Application Insights instances (one for each of v1 and v2 Function apps)
