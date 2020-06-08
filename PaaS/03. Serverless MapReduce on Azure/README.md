@@ -31,7 +31,7 @@ This performs the following permanent changes to your machine:
 
 ### Instructions
 
-Download the code present in the repo to work with this solution.
+Download the [code](https://github.com/vlele/az-arch-master-class/tree/master/PaaS/03.%20Serverless%20MapReduce%20on%20Azure/Serverless-MapReduce-on-Azure) present in the repo to work with this solution.
 
 Below are the step-by-step instructions and an explanation of each step.
 
