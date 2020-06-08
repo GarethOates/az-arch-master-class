@@ -67,16 +67,16 @@ Follow the below steps to deploy the code using the PowerShell:
 	- Subscription ID
 	- Base name for resources
 	
-   > Note: By default all resources will be provisioned in the West US 2 region of Azure. If you wish to have them somewhere else, provide the -region parameter to the deployment script
+> Note: By default all resources will be provisioned in the West US 2 region of Azure. If you wish to have them somewhere else, provide the -region parameter to the deployment script
    
-2.Following resources will be provisioned for you
+2. Following resources will be provisioned for you
 	- New Resource group
 	- 2 Application Insights instances (one for each of v1 and v2 Function apps)
 	- 2 Storage accounts
 	- 1 Consumption App Service Plan
 	- 2 Function Apps
 
-#### Testing
+#### Testing the Function App
 1. Visit your Function App in the Azure Portal.
 2. Click the StartAsync function.
 3. Click 'Get function URL' & copy it for usage in your favorite REST API testing program.
