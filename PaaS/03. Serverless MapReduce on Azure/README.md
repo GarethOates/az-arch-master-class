@@ -31,9 +31,7 @@ Below are the step-by-step instructions and an explanation of each step.
 4. Import the  module using the below command:
 	 `Import-Module -Name Azure.Storage`
 5. Execute `TaxiDataImporter.ps1` from the repo directory to copy each file from the NYC Taxi site in to your Azure Storage Account.
-6. You'll be asked to provide the following:
-	- A connection string to your Azure Storage account
-	- The container name within the storage account into which to copy the data.
+6. You'll be asked to provide the following: Subscription ID, Resource Group Name, Storage Account Name and Container Name
 
 #### Deploy the Map Reduce code
 
@@ -66,7 +64,4 @@ Follow the steps to deploy this solution to your own Azure subscription:
 5. Select the key provided in the dropdown.
 6. In Query parameters, pass the Name as Path and value of the path. Value pf path will be path of `<path where code is downloaded>\ServerlessMapReduce.v1` on your local computer.
 7. You'll receive back a list of URLs you can use to check status, issue new events (not handled by this sample), or terminate the orchestration.
-
-
-
 
