@@ -48,7 +48,8 @@ Below are the step-by-step instructions and an explanation of each step.
 
 There are two ways to choose from to deploy this solution to your own Azure subscription:
 
-1. **Visual Studio** : Follow the below steps to deploy the code using the Visual Studio:
+##### **Visual Studio**
+Follow the below steps to deploy the code using the Visual Studio:
 1. Open ServerlessMapReduce.sln in Visual Studio.
 2. You'll first notice there are two projects in the solution. One is a Function v2 (.Net Standard) project, the other is a Function v1 (.Net 4.x aka "netfx") project. The code for each project is identical, and shared between the two via linked files.
 3. Right-click either/both of the project(s) and choose 'Publish...'
@@ -57,14 +58,15 @@ There are two ways to choose from to deploy this solution to your own Azure subs
 	- Storage account
 	- Function app instance
 
-2. **Powershell** : Follow the below steps to deploy the code using the PowerShell:
+##### **Powershell**
+Follow the below steps to deploy the code using the PowerShell:
 
 > **Important**: Run deploy.ps1 in a new PowerShell window only after you've executed SetupEnvironment.ps1. This refreshes environment variables so the build & deploy commands will execute successfully
 
 1. Execute deploy.ps1 with the following inputs:
 	- Subscription ID
 	- Base name for resources
-   Note: By default all resources will be provisioned in the West US 2 region of Azure. If you wish to have them somewhere else, provide the -region parameter to the deployment script
+   > Note: By default all resources will be provisioned in the West US 2 region of Azure. If you wish to have them somewhere else, provide the -region parameter to the deployment script
 2.Following resources will be provisioned for you
 	- New Resource group
 	- 2 Application Insights instances (one for each of v1 and v2 Function apps)
@@ -73,11 +75,11 @@ There are two ways to choose from to deploy this solution to your own Azure subs
 	- 2 Function Apps
 
 #### Testing
-1.Visit your Function App in the Azure Portal.
-2.Click the StartAsync function.
-3.Click 'Get function URL' & copy it for usage in your favorite REST API testing program.
-4.Issue an HTTP POST to that endpoint with the path parameter populated from the output of the PowerShell script you ran in 2.1.
-5.You'll receive back a list of URLs you can use to check status, issue new events (not handled by this sample), or terminate the orchestration.
+1. Visit your Function App in the Azure Portal.
+2. Click the StartAsync function.
+3. Click 'Get function URL' & copy it for usage in your favorite REST API testing program.
+4. Issue an HTTP POST to that endpoint with the path parameter populated from the output of the PowerShell script you ran in 2.1.
+5. You'll receive back a list of URLs you can use to check status, issue new events (not handled by this sample), or terminate the orchestration.
 
 
 
