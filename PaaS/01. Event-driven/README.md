@@ -62,7 +62,7 @@ Activating the Auth0 topic in Azure allows events to flow from Auth0 to Azure.
 3. Replace `<site-name>` with a unique name for your web app. The web app name must be unique because it's part of the DNS entry.
 4. The deployment may take a few minutes to complete. 
 5. After the deployment has succeeded, view your web app to make sure it's running. 
-6. In a web browser, navigate to: https://<your-site-name>.azurewebsites.net
+6. In a web browser, navigate to: `https://<your-site-name>.azurewebsites.net`
   
     Refer this [section](https://docs.microsoft.com/en-us/azure/event-grid/custom-event-quickstart) to know more on creating WebHook for the endpoint. 
   
