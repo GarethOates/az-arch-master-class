@@ -16,19 +16,6 @@ The model is a specialization of the split-apply-combine strategy for data analy
 
 Please refer [documentation](https://docs.microsoft.com/en-us/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/) for details.
 
-### Prerequisites
-
-If you choose to complete this setup using PowerShell script. Execute the `SetupEnvironment.ps1` PowerShell script from an Administrator PowerShell instance.
-
-Note: If you've never run PowerShell scripts on your computer, you'll need to change the Execution Policy to allow script running by executing Set-ExecutionPolicy Bypass -Scope Process -Force before running the above command. Using -Scope Process here ensures ExecutionPolicy isn't permanently set to allow scripts on your machine, but rather just while you're doing the import
-
-This performs the following permanent changes to your machine:
-
-- Installs Chocolatey (for package installation automation)
-- Installs Azure PowerShell
-- Installs .Net Core SDK (to build v2 app)
-- Installs .Net 4.6.1 Developer pack (to build v1 app)
-
 ### Instructions
 
 Download the [code](https://github.com/vlele/az-arch-master-class/tree/master/PaaS/03.%20Serverless%20MapReduce%20on%20Azure/Serverless-MapReduce-on-Azure) present in the repo to work with this solution.
@@ -51,9 +38,6 @@ Below are the step-by-step instructions and an explanation of each step.
 #### Deploy the Map Reduce code
 
 Follow the steps to deploy this solution to your own Azure subscription:
-
-#### **2. Powershell**
-Follow the below steps to deploy the code using the PowerShell:
 
 **Important**: Run `deploy.ps1` in a new PowerShell window only after you've executed `SetupEnvironment.ps1`. This refreshes environment variables so the build & deploy commands will execute successfully
 
