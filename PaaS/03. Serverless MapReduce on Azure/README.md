@@ -31,7 +31,7 @@ This performs the following permanent changes to your machine:
 
 ### Instructions
 
-Please click on the [GitHub link](https://github.com/Azure-Samples/durablefunctions-mapreduce-dotnet/tree/master/) to find the Code for Serverless MapReduce on Azure.
+Download the code present in the repo to work with this solution.
 
 Below are the step-by-step instructions and an explanation of each step.
 
@@ -43,24 +43,14 @@ Below are the step-by-step instructions and an explanation of each step.
 	 `Install-Module -Name Azure.Storage -AllowClobber`
 4. Import the  module using the below command:
 	 `Import-Module -Name Azure.Storage`
-5. Execute TaxiDataImporter.ps1 from the repo directory to copy each file from the NYC Taxi site in to your Azure Storage Account.
+5. Execute `TaxiDataImporter.ps1` from the repo directory to copy each file from the NYC Taxi site in to your Azure Storage Account.
 6. You'll be asked to provide the following:
 	- A connection string to your Azure Storage account
 	- The container name within the storage account into which to copy the data.
 
 #### Deploy the Map Reduce code
 
-There are two ways to choose from to deploy this solution to your own Azure subscription:
-
-#### **1. Visual Studio**
-Follow the below steps to deploy the code using the Visual Studio:
-1. Open `ServerlessMapReduce.sln` in Visual Studio.
-2. You'll first notice there are two projects in the solution. One is a Function v2 (.Net Standard) project, the other is a Function v1 (.Net 4.x aka "netfx") project. The code for each project is identical, and shared between the two via linked files.
-3. Right-click either/both of the project(s) and choose 'Publish...'
-4. Walk through the wizard to create: 
-	- App service plan
-	- Storage account
-	- Function app instance
+Follow the steps to deploy this solution to your own Azure subscription:
 
 #### **2. Powershell**
 Follow the below steps to deploy the code using the PowerShell:
@@ -80,12 +70,20 @@ Follow the below steps to deploy the code using the PowerShell:
 	- 1 Consumption App Service Plan
 	- 2 Function Apps
 
+3. Open `ServerlessMapReduce.sln` in Visual Studio.
+4. You'll first notice there are two projects in the solution. One is a Function v2 (.Net Standard) project, the other is a Function v1 (.Net 4.x aka "netfx") project. The code for each project is identical, and shared between the two via linked files.
+3. Right-click on first project and choose 'Publish...'. Publish it to v1 app service created by the PowerShell Script.
+4. Right-click on second project and choose 'Publish...'. Publish it to v2 app service created by the PowerShell Script.
+5. After the code is published to the app service. Lets test the app service.
+
 #### Testing the Function App
-1. Visit your Function App in the Azure Portal.
+1. Visit your Function App v1 in the Azure Portal.
 2. Click the StartAsync function.
-3. Click 'Get function URL' & copy it for usage in your favorite REST API testing program.
-4. Issue an HTTP POST to that endpoint with the path parameter populated from the output of the PowerShell script you ran in 2.1.
-5. You'll receive back a list of URLs you can use to check status, issue new events (not handled by this sample), or terminate the orchestration.
+3. Click 'Test'. It open a side window to test the connection.
+4. Select the HTTP Method as "POST".
+5. Select the key provided in the dropdown.
+6. In Query parameters, pass the Name as Path and value of the path. Value pf path will be path of `<path where code is downloaded>\ServerlessMapReduce.v1` on your local computer.
+7. You'll receive back a list of URLs you can use to check status, issue new events (not handled by this sample), or terminate the orchestration.
 
 
 
