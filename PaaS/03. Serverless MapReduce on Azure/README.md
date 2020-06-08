@@ -37,10 +37,14 @@ Below are the step-by-step instructions and an explanation of each step.
 
 #### Copy the dataset to an Azure Blob Storage instance
 
-1. In the Azure portal, Create a Storage account and create a conatiner under the storage account.
+1. In the Azure portal, Create a Storage account and create a container under the storage account.
 2. Open a new PowerShell window.
-2. Execute TaxiDataImporter.ps1 from the repo directory to copy each file from the NYC Taxi site in to your Azure Storage Account.
-3. You'll be asked to provide the following:
+3. Before running the script install the **Azure.Storage** module. Run the below command to install the module:
+	 `Install-Module -Name Azure.Storage -AllowClobber`
+4. Import the  module using the below command:
+	 `Import-Module -Name Azure.Storage`
+5. Execute TaxiDataImporter.ps1 from the repo directory to copy each file from the NYC Taxi site in to your Azure Storage Account.
+6. You'll be asked to provide the following:
 	- A connection string to your Azure Storage account
 	- The container name within the storage account into which to copy the data.
 
