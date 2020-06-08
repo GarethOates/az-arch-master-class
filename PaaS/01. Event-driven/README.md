@@ -53,7 +53,7 @@ Activating the Auth0 topic in Azure allows events to flow from Auth0 to Azure.
 - Follow the instructions for the particular service.
 - Back on the Create Event Subscription page, select Create.
 
-#### Create a message endpoint for Subscriber
+#### Create a message endpoint (WebHook) for Subscriber
 1. Before subscribing to the partner topic, let's create the endpoint for the event message. 
 2. Use the below Azure CLI command to deploy the webapp.
 
@@ -64,7 +64,7 @@ Activating the Auth0 topic in Azure allows events to flow from Auth0 to Azure.
 5. After the deployment has succeeded, view your web app to make sure it's running. 
 6. In a web browser, navigate to: https://<your-site-name>.azurewebsites.net
   
-Refer this [section](https://docs.microsoft.com/en-us/azure/event-grid/custom-event-quickstart) to know more on creating WebHook for the endpoint. 
+    Refer this [section](https://docs.microsoft.com/en-us/azure/event-grid/custom-event-quickstart) to know more on creating WebHook for the endpoint. 
   
   
 
