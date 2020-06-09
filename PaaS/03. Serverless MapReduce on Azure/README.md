@@ -63,3 +63,12 @@ Follow the steps to deploy this solution to your own Azure subscription:
 6. In Query parameters, pass the Name as Path and value of the path. Value will be path of v1 app folder on local computer i.e. `<path where code is downloaded>\ServerlessMapReduce.v1` .
 7. You'll receive back a list of URLs you can use to check status, issue new events (not handled by this sample), or terminate the orchestration.
 
+####  Code Details 
+
+Review the code in the following file 
+https://github.com/vlele/az-arch-master-class/blob/master/PaaS/03.%20Serverless%20MapReduce%20on%20Azure/Serverless-MapReduce-on-Azure/ServerlessMapReduce.v2/Sample.cs
+
+StartSync is the start function. 
+Start function calls the orchestration function  - BeginMapReduce
+BeginMapReduce implements the Map Reduce using the Durable functions 
+BeginMapReduce calls Activity functions for non deterministic tasks 
