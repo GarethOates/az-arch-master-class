@@ -1,4 +1,4 @@
-# Multi-container 
+# Multi-container group
 
 ### Introduction
 
