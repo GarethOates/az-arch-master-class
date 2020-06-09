@@ -18,7 +18,7 @@ Below are the step-by-step instructions and an explanation of each step.
 
 4. After the template is deployed, Go to the **Resource Group** -> **Container Group** which you created using the template.
 
-5. Go to Containers. You will see the 2 Container present under the container group.
+5. Go to Containers. You will see the 2 Containers present under the container group.
 
 6. Click on **Container 1**. Click on the **Logs** button present there to check the logs of container 1.
 
