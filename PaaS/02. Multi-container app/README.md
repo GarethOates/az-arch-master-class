@@ -40,4 +40,8 @@ Below are the step-by-step instructions and an explanation of each step.
 
 7. Browse to the deployed app at `http://<app_name>.azurewebsites.net`. The app may take a few minutes to load. If you receive an error, allow a few more minutes then refresh the browser.
 
+8. Go to App Service and search for container settings. Review the Docker Compose configuration settings. 
+
+
+
 Note: You can also use the Azure CLI to execute these commands.
